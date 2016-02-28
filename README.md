@@ -5,7 +5,7 @@ I made this about a year ago, and it has all of the markings of the newbie I am.
  <br />
 I have some extra printouts in there for debugging. <br />
  <br />
-To use, in a Linux command line: <br />
+Parser inputs: <br />
  <br />
 -f: required, followed by the image file path <br />
 -o: required, followed by the output file path of the new image <br />
@@ -14,3 +14,6 @@ To use, in a Linux command line: <br />
 --90: if set, rotates the image 90 degrees to the right <br />
 --180: if set, rotates the image 180 degrees <br />
 --270: if set, rotates the image 270 degrees to the right <br />
+ <br />
+Example: "python ImageManip2.py -f /imagefile.bmp -o /output.bmp --hflip --90"<br />
+This will take in your original imagefile.bmp, flip it horizontally, rotate it 90 degrees to the right, and save the changes in a new output.bmp file.
