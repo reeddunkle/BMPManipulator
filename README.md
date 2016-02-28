@@ -1,7 +1,9 @@
 # BMPManipulator
 Simple bitmap image manipulator project
 
-I made this about a year ago, and it has all of the markings of the newbie I am. First, it doesn't work, not completely. I began with 3x3 pixel images, and worked up to 5x6, 4x3, 4x2, 6x6, and 2x4. They all work. But my code is uses some constants that apply to those size BMPs, but which aren't true for all BMPs. This is mostly true for my counting of padding. <br />
+I made this about a year ago, and it has all of the markings of the newbie I am. First, it doesn't work, not completely. I began with 3x3 pixel images, and worked up to 5x6, 4x3, 4x2, 6x6, and 2x4. They all work. But my code relies on some constants that work for these BMPs, but which aren't true for all BMPs. Primarily this is in my padding variables. <br />
+ <br />
+That said, my functions do work with these files, which means that my underlying logic works. <br />
  <br />
 I have some extra printouts in there for debugging. <br />
  <br />
