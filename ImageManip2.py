@@ -5,20 +5,36 @@ import binascii
 
 def horizontal_flip(new_hex, offset_val, row_len, padding, height):
     padding_count = 0
+    
+    #Grabs all of the stuff at the start of the file that isn't related to the pixel placement
+    #and adds it to our output string. This is one of the biggest weaknesses of my program.
     temp_hex = new_hex[0:offset_val]
 
     for runs in range(height):
 
+        #Captures the original file's code, one row at a time.
         og_row = new_hex[offset_val + (row_len*runs) + padding_count:(offset_val + (row_len*(runs+1)) + padding_count)]
 
+
+
+        #Works through each character in the 6-character hexidecimal pixel in that original row, 
+        #restructuring it for the new output string.
+        #The tricky part is that you want to keep the 6-character hex color in the same order for each pixel --
+        #that's how you keep the color the same -- but you need to invert the order of the colors for each row.
+        
+        #This was the first function I made, and I think my code is the crudest here. I change my expression in the
+        #later functions, and I think it is better polished as I go. I left this expression in the code to offer
+        #comparison.
         for i in range(1,(len(og_row)/6)+1):
             temp_hex += og_row[len(og_row)-i*6:len(og_row)-(i-1)*6]
 
+        #Adds in padding '0's found in my BMPs. Another big weakness.
         for a in range(padding):
             temp_hex += "0"
 
         padding_count += padding
 
+    #This is an unnecessary step, I know. But it helps me keep the process consistent.
     new_hex = temp_hex
 
     return new_hex
@@ -84,6 +100,7 @@ def rotate_270(new_hex, offset_val, padding, width, height):
 
     return new_hex
 
+#Originally I was only working with squares. I built this in to move into rectangles.
 def swap_dimensions(bmp_hex):
     temp_hex = bmp_hex[0:36]
     width = bmp_hex[36:44]
@@ -120,6 +137,7 @@ def get_padding(bmp_hex):
 
     return padding * 2
 
+#I built this so that I can do my own conversions. It was also a fun project, albeit simple once you understand it.
 def hex2dec(str_hex):
     temp = 0
     total = 0
@@ -163,7 +181,8 @@ def hex2dec(str_hex):
 
 
 
-
+#Begin the commandline parser. This is all pretty crude, and somewhat arbitrary. It serves the purpose though, and gave
+#me a big of practice using a parser.
 
 
 
@@ -215,7 +234,7 @@ if args.ninety:
 if args.twoseventy:
     new_hex = rotate_270(new_hex, offset_val, padding, width, height)
 
-# This to check that the functions work
+# This to check that the functions work. All for debugging purposes.
 print "Offset value:"
 print offset_val
 print "Width:"
