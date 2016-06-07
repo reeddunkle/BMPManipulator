@@ -66,11 +66,12 @@ Parser inputs: <br />
  
  <img src=http://i.imgur.com/ViD0gb9.png>
  
--f: required, followed by the image file path <br />
--o: required, followed by the output file path of the new image <br />
---hflip: if set, flips the image horizontally <br />
---vflip: if set, flips the image vertically <br />
---90: if set, rotates the image 90 degrees to the right <br />
---180: if set, rotates the image 180 degrees <br />
---270: if set, rotates the image 270 degrees to the right <br />
- <br />
+ ```
+-f: required, followed by the image file path
+-o: required, followed by the output file path of the new image
+--hflip: if set, flips the image horizontally
+--vflip: if set, flips the image vertically
+--90: if set, rotates the image 90 degrees to the right
+--180: if set, rotates the image 180 degrees
+--270: if set, rotates the image 270 degrees to the right
+```
