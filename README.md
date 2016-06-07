@@ -64,8 +64,6 @@ I have some extra printouts in there for debugging. <br />
 Parser inputs: <br />
  <br />
  
- <img src=http://i.imgur.com/ViD0gb9.png>
- 
  ```
 -f: required, followed by the image file path
 -o: required, followed by the output file path of the new image
@@ -75,3 +73,11 @@ Parser inputs: <br />
 --180: if set, rotates the image 180 degrees
 --270: if set, rotates the image 270 degrees to the right
 ```
+
+Help:
+
+```
+python ImageManip2.py --help
+```
+
+ <img src=http://i.imgur.com/ViD0gb9.png>
