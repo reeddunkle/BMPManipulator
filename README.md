@@ -74,8 +74,3 @@ Parser inputs: <br />
 --180: if set, rotates the image 180 degrees <br />
 --270: if set, rotates the image 270 degrees to the right <br />
  <br />
-
-#### Example
-
-
-
