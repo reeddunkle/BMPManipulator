@@ -4,34 +4,27 @@ My first Python project!
 
 ----
 
-## Usage
+## Example
 
 I've got a few small example images you can use.
 
-**Before:** fivebysix.bmp
+**Before:                                       After:**
 
-<img src=http://i.imgur.com/GIp13OB.png>
+<img src=http://i.imgur.com/CatMypQ.png>
 
-----
 
-Let's rotate it 90 degrees.
+## Using it
+
+To do the 90 degree rotation above, on the **fivebysix.bmp** file in the same directory:
 
 ```
 python ImageManip2.py -f fivebysix.bmp -o rotated.bmp --90
 ```
 
-----
-
 - Notice the print statement debugging
 - Also notice the **rotated.bmp** file now in the directory
 
 <img src=http://i.imgur.com/LogwFBy.png>
-
-----
-
-**After:** rotated.bmp
-
-<img src=http://i.imgur.com/l2yPfQf.png>
 
 ----
 
