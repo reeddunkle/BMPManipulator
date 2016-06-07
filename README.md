@@ -8,7 +8,7 @@ My first Python project!
 
 I've got a few small example images you can use.
 
-**Before:                                       After:**
+**Before & After**
 
 <img src=http://i.imgur.com/CatMypQ.png>
 
