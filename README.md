@@ -28,7 +28,7 @@ python ImageManip2.py -f fivebysix.bmp -o rotated.bmp --90
 
 ----
 
-### Well
+### Well...
 
 This is pretty darn rough. I made this about two years ago after completing the Codecademy Python course. I had a lot of fun, and learned a thing or two.
 
